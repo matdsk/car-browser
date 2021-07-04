@@ -1,0 +1,165 @@
+.header {
+  display: flex;
+  align-items: center;
+  h1 {
+    font-size: 3em;
+    letter-spacing: 0.3rem;
+    padding-left: 0.5em;
+    color: #cecd51;
+  }
+  img {
+    height: 5em;
+  }
+}
+
+form {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+
+  & input {
+    margin-left: 10px;
+    padding: 10px;
+    width: 300px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+    border: 2px solid #aeb132;
+    border-right: none;
+    font-size: 1.2em;
+  }
+
+  & button {
+    outline: none;
+    border: 2px solid #cecd51;
+    border-left: none;
+    background: #4f4d31;
+    color: #fff;
+    padding: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 1.2em;
+
+    &:hover,
+    &:focus {
+      background: #cecd51;
+      color: #4f4d31;
+    }
+  }
+}
+
+table {
+  width: 100%;
+  background-color: rgba(79, 77, 49, 0.5);
+  & * {
+    color: #fff;
+  }
+}
+
+::ng-deep .mat-form-field-underline .mat-form-field-ripple {
+  background-color: #cecd51;
+}
+
+.mat-input-element {
+  caret-color: #cecd51;
+}
+
+.paginator {
+  background-color: rgba(174, 177, 50, 0.7);
+  font-size: 1.1em;
+}
+
+.mat-form-field {
+  font-size: 1.1em;
+  width: 100%;
+  & * {
+    color: #fff;
+    font-size: 1.2em;
+  }
+}
+
+.mat-row {
+  height: 3em;
+}
+
+.mat-header-row {
+  height: 3em;
+  background-color: rgba(174, 177, 50, 0.5);
+  & * {
+    font-size: 1.2em;
+  }
+}
+
+td,
+th {
+  width: 25%;
+}
+
+.no-result {
+  text-align: center;
+  img {
+    margin-top: 2em;
+    height: 150px;
+    color: #cecd51;
+  }
+  h3 {
+    font-size: 1.3em;
+    color: #cecd51;
+  }
+}
+
+.no-data {
+  margin-top: 5em;
+  text-align: center;
+  img {
+    height: 250px;
+  }
+  h3 {
+    margin-top: 1em;
+    font-size: 2em;
+    color: #cecd51;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .header {
+    width: 100%;
+    position: absolute;
+    top: 2.7em;
+    left: 0;
+    justify-content: center;
+    h1 {
+      font-size: 3em;
+      letter-spacing: 0;
+      color: #fff;
+    }
+    img {
+      height: 5em;
+    }
+  }
+
+  form {
+    margin-top: 2em;
+    display: block;
+    & input {
+      width: 100%;
+      margin: unset;
+      border-right: 2px solid #aeb132;
+      border-bottom: unset;
+      border-radius: 0;
+    }
+    & button {
+      width: 100%;
+      border-left: 2px solid #cecd51;
+      border-top: unset;
+      border-radius: 0;
+    }
+  }
+
+  .paginator {
+    display: flex;
+    justify-content: center;
+  }
+}
